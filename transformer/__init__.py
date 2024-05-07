@@ -7,4 +7,5 @@ import transformer.beam
 
 __all__ = [
     modules, sublayers, layers,
-    models, translator, beam]
+    models, translator, beam
+]

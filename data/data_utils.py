@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import torch
 import torchtext.data as data
 from torchtext.data import Field, Iterator, BucketIterator
@@ -160,4 +161,3 @@ def load_test_data(data_path, vocab_path, batch_size, use_cuda=False):
                          repeat=False, device=device, shuffle=False, sort=False)
 
     return src_field, test_iter
-

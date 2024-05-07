@@ -70,6 +70,7 @@ class PosEncoding(nn.Module):
 
         # additional single row for PAD idx
         self.pos_enc = nn.Embedding(max_seq_len + 1, d_word_vec)
+
         # fix positional encoding: exclude weight from grad computation
         self.pos_enc.weight = nn.Parameter(torch.from_numpy(pos_enc), requires_grad=False)
 
